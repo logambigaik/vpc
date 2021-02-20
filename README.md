@@ -115,16 +115,6 @@ Click on Create
     
 ![image](https://user-images.githubusercontent.com/54719289/108609935-7b703680-73f7-11eb-8e82-4b02048d999d.png)
 
-    For private, we need to select MAin as yes for example-vpc and     Update private subnet 
-    
- ![image](https://user-images.githubusercontent.com/54719289/108608049-414c6800-73ea-11eb-9ba9-368e0cf9114a.png)
-
-
-    Update Routes ( Choose NAT Gateway and enter ip as 0.0.0.0:
- 
- ![image](https://user-images.githubusercontent.com/54719289/108608178-65f50f80-73eb-11eb-84f1-db074472abe1.png)
-   
-  
 
 # Now Create instance with Private Subnet (before that update this subnet in route table):
 
@@ -159,8 +149,10 @@ Connect to private server using below command
 
 ![image](https://user-images.githubusercontent.com/54719289/108609542-8ecdd280-73f4-11eb-887e-3862059c4f88.png)
 
+    
+ ![image](https://user-images.githubusercontent.com/54719289/108608178-65f50f80-73eb-11eb-84f1-db074472abe1.png)
 
-        Click on Route and Click on Edit Route
+    Click on Route and Click on Edit Route
 
         Goto Route Table and add select Route table when Main having "Yes"
 
