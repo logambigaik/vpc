@@ -115,13 +115,10 @@ Click on Create
     
 ![image](https://user-images.githubusercontent.com/54719289/108609935-7b703680-73f7-11eb-8e82-4b02048d999d.png)
 
-    For private, we need to select MAin as yes for example-vpc 
+    For private, we need to select MAin as yes for example-vpc and     Update private subnet 
     
  ![image](https://user-images.githubusercontent.com/54719289/108608049-414c6800-73ea-11eb-9ba9-368e0cf9114a.png)
- 
-    Update private subnet
 
-![image](https://user-images.githubusercontent.com/54719289/108609935-7b703680-73f7-11eb-8e82-4b02048d999d.png)
 
     Update Routes ( Choose NAT Gateway and enter ip as 0.0.0.0:
  
