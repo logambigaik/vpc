@@ -56,6 +56,10 @@ Please select VPC and click on Attach Internet Gateway
 
 Goto Routes and click on Edit Routes (updated example-vpc route as example-route-vpc)
 
+Click on Add Route and provide 0.0.0.0/0 as Destination and internet gateway as Target
+
+
+
 ![image](https://user-images.githubusercontent.com/54719289/108606478-47d5e200-73e0-11eb-9f61-ff7256a96828.png)
 
 ![image](https://user-images.githubusercontent.com/54719289/108606525-88cdf680-73e0-11eb-9f2d-6e967925d3f2.png)
