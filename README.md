@@ -99,20 +99,23 @@ Connect Instance using Mobaxterm or Putty
 
 
 
-# Create Private Subnet
-![image](https://user-images.githubusercontent.com/58024415/95066491-1b1a7a00-0720-11eb-8ba8-6172499ff343.png)
+# Create Private Subnet with NAT Gateway:
+
+![image](https://user-images.githubusercontent.com/54719289/108607562-1f9db180-73e7-11eb-9357-14c9fb73f06e.png)
+
 
 Click on Create
 
+![image](https://user-images.githubusercontent.com/54719289/108607577-347a4500-73e7-11eb-9dd1-ed5647fcee66.png)
+
 Now Create instance with Private Subnet
-
-![image](https://user-images.githubusercontent.com/58024415/95066662-5321bd00-0720-11eb-9a35-206246b1526a.png)
-
 Selct Private Subnet and also keep Auto-assign Public IP as Disable and Click on Review & Launch. Select Key Pair and create instance
 
-![image](https://user-images.githubusercontent.com/58024415/95067257-2f12ab80-0721-11eb-8673-1391bba99216.png)
+![image](https://user-images.githubusercontent.com/54719289/108607695-df8afe80-73e7-11eb-95f9-f7b3543abec4.png)
 
 See public ip not shown in below image. For connecting private server, we need server which is having public subnet vpc
+
+![image](https://user-images.githubusercontent.com/54719289/108607710-09442580-73e8-11eb-83ac-86c009bb73e8.png)
 
 copy keypair (.pem) file into public subnet server
 
