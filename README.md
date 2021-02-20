@@ -169,8 +169,7 @@ Connect to private server using below command
 
         Also update the subnet
         
-![image](https://user-images.githubusercontent.com/54719289/108609659-61355900-73f5-11eb-8ad4-f132651aaba3.png)
-
+![image](https://user-images.githubusercontent.com/54719289/108610386-4ebe1e00-73fb-11eb-851c-08a529d6906b.png)
 
 
 Now connect to sever and try to install git.
