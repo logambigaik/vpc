@@ -1,51 +1,86 @@
+
+# NAT Gateway image for VPC:
+![image](https://user-images.githubusercontent.com/54719289/108605334-8caa4a80-73d9-11eb-8f25-0cb90c21af14.png)
+
+# Subnet Mask - cheat sheet
+
+![image](https://user-images.githubusercontent.com/54719289/108605535-98e2d780-73da-11eb-80da-89eb30d5afe6.png)
+
+/16 ---> gives 65534 hosts and can create 65534 subnet 65534-ip address can create) 
+
+
 # Step1: Create VPC
-![image](https://user-images.githubusercontent.com/58024415/95064316-3041d980-071d-11eb-999c-76ccfd7ddefb.png)
+
+![image](https://user-images.githubusercontent.com/54719289/108605784-62a65780-73dc-11eb-853b-b5043e273c82.png)
 
 Click on Create VPC
+![image](https://user-images.githubusercontent.com/54719289/108605812-908b9c00-73dc-11eb-949c-8d6f8f5a378e.png)
+
 # Step2: Create subnets
-![image](https://user-images.githubusercontent.com/58024415/95064493-7008c100-071d-11eb-944d-5aa2cf838012.png)
+
+    Public subnet creation:
+
+![image](https://user-images.githubusercontent.com/54719289/108606042-b8c7ca80-73dd-11eb-8801-15b6dcbe7a99.png)
 
 Click on Create
+![image](https://user-images.githubusercontent.com/54719289/108606056-d432d580-73dd-11eb-95e0-275ea3212e3f.png)
+
+# Step3 Create Route table
+
+![image](https://user-images.githubusercontent.com/54719289/108606149-63d88400-73de-11eb-9831-243b2f3f0b07.png)
+
+    Click on create
+
+![image](https://user-images.githubusercontent.com/54719289/108606175-8a96ba80-73de-11eb-9bcc-afbdd29cf42a.png)
+
 # Create Internet Gateway
-![image](https://user-images.githubusercontent.com/58024415/95064596-9595ca80-071d-11eb-94bd-1914c8226912.png)
+
+![image](https://user-images.githubusercontent.com/54719289/108606219-d21d4680-73de-11eb-9f26-69b5e974299a.png)
 
 Click on create internet gateway
 
+![image](https://user-images.githubusercontent.com/54719289/108606253-0f81d400-73df-11eb-85e4-3cb20bb26f32.png)
+
 Please attach VPC to our internet gateway
-![image](https://user-images.githubusercontent.com/58024415/95064680-b65e2000-071d-11eb-88f8-559139af2c08.png)
+
+![image](https://user-images.githubusercontent.com/54719289/108606310-769f8880-73df-11eb-9744-5d3838858881.png)
 
 Please select VPC and click on Attach Internet Gateway 
-![image](https://user-images.githubusercontent.com/58024415/95064867-f2918080-071d-11eb-87e3-c20f864947b1.png)
-# Create Route table
-![image](https://user-images.githubusercontent.com/58024415/95064998-1654c680-071e-11eb-8166-1e5e51f1ce73.png)
 
-Click on create
+![image](https://user-images.githubusercontent.com/54719289/108606324-8cad4900-73df-11eb-8d6c-44eb1770f83a.png)
 
-![image](https://user-images.githubusercontent.com/58024415/95065101-37b5b280-071e-11eb-9edf-d65cbfd742fd.png)
+![image](https://user-images.githubusercontent.com/54719289/108606394-df870080-73df-11eb-99ce-454dd3992cf0.png)
 
-Goto Routes and click on Edit Routes
+![image](https://user-images.githubusercontent.com/54719289/108606636-1b6e9580-73e1-11eb-84c8-910366015f99.png)
 
-![image](https://user-images.githubusercontent.com/58024415/95065782-21f4bd00-071f-11eb-8847-0001dea53a7b.png)
 
-Attach public subnet at Aubnet Associates
+Goto Routes and click on Edit Routes (updated example-vpc route as example-route-vpc)
 
-![image](https://user-images.githubusercontent.com/58024415/95065925-51a3c500-071f-11eb-9d9e-54d86184b4a0.png)
+![image](https://user-images.githubusercontent.com/54719289/108606478-47d5e200-73e0-11eb-9f61-ff7256a96828.png)
+
+![image](https://user-images.githubusercontent.com/54719289/108606525-88cdf680-73e0-11eb-9f2d-6e967925d3f2.png)
+
+Now, Attach public subnet under router table,
+
+![image](https://user-images.githubusercontent.com/54719289/108606567-c894de00-73e0-11eb-9f89-7e961624e4db.png)
+
+![image](https://user-images.githubusercontent.com/54719289/108606599-efebab00-73e0-11eb-8273-dfb28cafcf7d.png)
 
 Click on save
 
-![image](https://user-images.githubusercontent.com/58024415/95065244-63d13380-071e-11eb-8301-f07bebe8df5a.png)
+![image](https://user-images.githubusercontent.com/54719289/108606652-2f19fc00-73e1-11eb-9aff-19a0767dec9f.png)
 
-Click on Add Route and provide 0.0.0.0/0 as Destination and internet gateway as Target
+
 
 Now Create instance with this VPC and check whether you can able to connect or not
 
 Please select VPC at configure system step
 
-![image](https://user-images.githubusercontent.com/58024415/95065516-ca565180-071e-11eb-8da6-f2c9e46b8430.png)
+
 
 Connect Instance using Mobaxterm or Putty
 
-![image](https://user-images.githubusercontent.com/58024415/95066024-75ffa180-071f-11eb-9cee-a3c081b7130c.png)
+
 
 # Create Private Subnet
 ![image](https://user-images.githubusercontent.com/58024415/95066491-1b1a7a00-0720-11eb-8ba8-6172499ff343.png)
