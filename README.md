@@ -59,7 +59,6 @@ Goto Routes and click on Edit Routes (updated example-vpc route as example-route
 Click on Add Route and provide 0.0.0.0/0 as Destination and internet gateway as Target
 
 
-
 ![image](https://user-images.githubusercontent.com/54719289/108606478-47d5e200-73e0-11eb-9f61-ff7256a96828.png)
 
 ![image](https://user-images.githubusercontent.com/54719289/108606525-88cdf680-73e0-11eb-9f2d-6e967925d3f2.png)
@@ -78,11 +77,25 @@ Click on save
 
 Now Create instance with this VPC and check whether you can able to connect or not
 
-Please select VPC at configure system step
+Please select VPC at configure system step(example-vpc)
 
+![image](https://user-images.githubusercontent.com/54719289/108606838-997f6c00-73e2-11eb-9032-0ab119a0ab9b.png)
+
+![image](https://user-images.githubusercontent.com/54719289/108606805-5f15cf00-73e2-11eb-8915-e39fd6102491.png)
 
 
 Connect Instance using Mobaxterm or Putty
+
+![image](https://user-images.githubusercontent.com/54719289/108606955-71dcd380-73e3-11eb-8978-166e8a5379ad.png)
+
+
+# Creating instance after removing subnet under router table:
+![image](https://user-images.githubusercontent.com/54719289/108607100-47d7e100-73e4-11eb-8d03-604e7c807a54.png)
+
+# EC2 -Instance creation without subnet -Wont connect:
+
+![image](https://user-images.githubusercontent.com/54719289/108607147-a43b0080-73e4-11eb-8b32-1e684bd3f695.png)
+
 
 
 
