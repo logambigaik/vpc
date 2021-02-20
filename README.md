@@ -99,7 +99,7 @@ Connect Instance using Mobaxterm or Putty
 
 
 
-# Create Private Subnet with NAT Gateway:
+# Create Private Subnet:
 
 ![image](https://user-images.githubusercontent.com/54719289/108607562-1f9db180-73e7-11eb-9357-14c9fb73f06e.png)
 
@@ -108,8 +108,28 @@ Click on Create
 
 ![image](https://user-images.githubusercontent.com/54719289/108607577-347a4500-73e7-11eb-9dd1-ed5647fcee66.png)
 
-Now Create instance with Private Subnet
-Selct Private Subnet and also keep Auto-assign Public IP as Disable and Click on Review & Launch. Select Key Pair and create instance
+# Create NAT Gateway Route:
+    Specify any name, select private subnet and Allocate elastic IP
+    
+![image](https://user-images.githubusercontent.com/54719289/108608008-ea469300-73e9-11eb-9523-2caf647c5086.png)
+
+    For private, we need to select MAin as yes for example-vpc and update private subnet
+    
+ ![image](https://user-images.githubusercontent.com/54719289/108608049-414c6800-73ea-11eb-9ba9-368e0cf9114a.png)
+ 
+    Update public subnet
+
+![image](https://user-images.githubusercontent.com/54719289/108608137-07c82c80-73eb-11eb-80cc-c9eb56951f04.png)
+
+    Update Routes ( Choose NAT Gateway and enter ip as 0.0.0.0:
+ 
+ ![image](https://user-images.githubusercontent.com/54719289/108608178-65f50f80-73eb-11eb-84f1-db074472abe1.png)
+   
+  
+
+# Now Create instance with Private Subnet (before that update this subnet in route table):
+
+    Selct Private Subnet and also keep Auto-assign Public IP as Disable and Click on Review & Launch. Select Key Pair and create instance
 
 ![image](https://user-images.githubusercontent.com/54719289/108607695-df8afe80-73e7-11eb-95f9-f7b3543abec4.png)
 
