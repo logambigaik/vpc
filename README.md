@@ -113,7 +113,7 @@ Click on Create
     
 ![image](https://user-images.githubusercontent.com/54719289/108608008-ea469300-73e9-11eb-9523-2caf647c5086.png)
 
-    For private, we need to select MAin as yes for example-vpc and update private subnet
+    For private, we need to select MAin as yes for example-vpc 
     
  ![image](https://user-images.githubusercontent.com/54719289/108608049-414c6800-73ea-11eb-9ba9-368e0cf9114a.png)
  
@@ -137,19 +137,25 @@ See public ip not shown in below image. For connecting private server, we need s
 
 ![image](https://user-images.githubusercontent.com/54719289/108607710-09442580-73e8-11eb-83ac-86c009bb73e8.png)
 
-copy keypair (.pem) file into public subnet server
 
-![image](https://user-images.githubusercontent.com/58024415/95068532-0ab7ce80-0723-11eb-8218-ed50562613c7.png)
+ Create .pem file in public (another EC2-instance)  , copy and paste the content of aws key pair file(KMGM in C:\G\KMGM.pem):
+ 
+ ![image](https://user-images.githubusercontent.com/54719289/108608512-58408980-73ed-11eb-95fd-b19f70e219a4.png)
 
-Change file permission using below command
+  
+  Change file permission using below command
 
-    chmod 400 ekscluster.pem
-    
+    chmod 400 test1.pem
+
+ ![image](https://user-images.githubusercontent.com/54719289/108608564-bcfbe400-73ed-11eb-9c2d-f6d3ed1c04d1.png)
+
 Connect to private server using below command
     
-    ssh -i ekscluster.pem ec2-user@10.0.2.216
-![image](https://user-images.githubusercontent.com/58024415/95068755-4c487980-0723-11eb-8475-e27184529133.png)
+    ssh -i test1.pem ec2-user@10.0.2.87
+   
+ ![image](https://user-images.githubusercontent.com/54719289/108609140-fc2c3400-73f1-11eb-9080-354d14fe99aa.png)
 
+    
 But we may not access internet now, If we want internet we need to create NAT Gateway
 
 ![image](https://user-images.githubusercontent.com/58024415/95070177-5a979500-0725-11eb-8f32-96eb09426113.png)
