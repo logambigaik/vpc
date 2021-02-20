@@ -1,5 +1,5 @@
 
-# NAT Gateway image for VPC:
+# NAT Gateway image for VPC:  ( WHile creating NAtGATeway-subnet should be public but while in route , if main is Yes means thats associated with NAT so there we need to provide private subnet with NAT Route)
 ![image](https://user-images.githubusercontent.com/54719289/108605334-8caa4a80-73d9-11eb-8f25-0cb90c21af14.png)
 
 # Subnet Mask - cheat sheet
@@ -32,6 +32,8 @@ Click on Create
     Click on create
 
 ![image](https://user-images.githubusercontent.com/54719289/108606175-8a96ba80-73de-11eb-9bcc-afbdd29cf42a.png)
+
+
 
 # Create Internet Gateway
 
@@ -109,17 +111,17 @@ Click on Create
 ![image](https://user-images.githubusercontent.com/54719289/108607577-347a4500-73e7-11eb-9dd1-ed5647fcee66.png)
 
 # Create NAT Gateway Route:
-    Specify any name, select private subnet and Allocate elastic IP
+    Specify any name, select public subnet and Allocate elastic IP
     
-![image](https://user-images.githubusercontent.com/54719289/108608008-ea469300-73e9-11eb-9523-2caf647c5086.png)
+![image](https://user-images.githubusercontent.com/54719289/108609935-7b703680-73f7-11eb-8e82-4b02048d999d.png)
 
     For private, we need to select MAin as yes for example-vpc 
     
  ![image](https://user-images.githubusercontent.com/54719289/108608049-414c6800-73ea-11eb-9ba9-368e0cf9114a.png)
  
-    Update public subnet
+    Update private subnet
 
-![image](https://user-images.githubusercontent.com/54719289/108608137-07c82c80-73eb-11eb-80cc-c9eb56951f04.png)
+![image](https://user-images.githubusercontent.com/54719289/108609935-7b703680-73f7-11eb-8e82-4b02048d999d.png)
 
     Update Routes ( Choose NAT Gateway and enter ip as 0.0.0.0:
  
@@ -156,22 +158,25 @@ Connect to private server using below command
  ![image](https://user-images.githubusercontent.com/54719289/108609140-fc2c3400-73f1-11eb-9080-354d14fe99aa.png)
 
     
-But we may not access internet now, If we want internet we need to create NAT Gateway
+# But we may not access internet now, If we want internet we need to create NAT Gateway
 
-![image](https://user-images.githubusercontent.com/58024415/95070177-5a979500-0725-11eb-8f32-96eb09426113.png)
+![image](https://user-images.githubusercontent.com/54719289/108609542-8ecdd280-73f4-11eb-887e-3862059c4f88.png)
 
-Click on Create NAT Gateway
 
-Goto Route Table and add select Route table when Main having "Yes"
+        Click on Route and Click on Edit Route
 
-![image](https://user-images.githubusercontent.com/58024415/95070582-f4f7d880-0725-11eb-8450-b4eb9025c0ec.png)
+        Goto Route Table and add select Route table when Main having "Yes"
 
-Click on Route and Click on Edit Route
+![image](https://user-images.githubusercontent.com/54719289/108609588-e2d8b700-73f4-11eb-8e1d-371e671f3e9a.png)
+![image](https://user-images.githubusercontent.com/54719289/108609605-00a61c00-73f5-11eb-8cfd-9a35a1175284.png)
 
-![image](https://user-images.githubusercontent.com/58024415/95070645-0ccf5c80-0726-11eb-9e49-b68e5260d4ce.png)
+        Also update the subnet
+        
+![image](https://user-images.githubusercontent.com/54719289/108609659-61355900-73f5-11eb-8ad4-f132651aaba3.png)
 
-Click on Save Routes
 
-Now connect to sever and try to install JAVA once again
 
-![image](https://user-images.githubusercontent.com/58024415/95070906-751e3e00-0726-11eb-89c2-bf3918795184.png)
+Now connect to sever and try to install git.
+
+![image](https://user-images.githubusercontent.com/54719289/108610184-a0fe3f80-73f9-11eb-8cdf-f14bd8885ad5.png)
+
