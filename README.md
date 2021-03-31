@@ -1,5 +1,8 @@
 
 # NAT Gateway image for VPC:  ( While creating NATGateway-subnet should be public but while in route , if main is Yes means thats associated with NAT so there we need to provide private subnet with NAT Route)
+
+![image](https://user-images.githubusercontent.com/54719289/113198590-00a00400-925e-11eb-9bfa-c2ad4ab0c371.png)
+
 ![image](https://user-images.githubusercontent.com/54719289/108605334-8caa4a80-73d9-11eb-8f25-0cb90c21af14.png)
 
 # Subnet Mask - cheat sheet
